@@ -1,0 +1,91 @@
+/* Header Styles */
+header {
+    background-color: #333; /* Couleur de fond du header */
+    color: #fff; /* Couleur du texte dans le header */
+    padding: 1rem 0; /* Espacement vertical */
+}
+
+/* Style de la barre de navigation */
+.navbar {
+    padding: 0; /* Retire l'espacement par défaut */
+}
+
+/* Logo et titre du site */
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #ffdd57; /* Couleur personnalisée pour le logo */
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 3%;
+}
+
+/* Style des liens de navigation */
+.navbar-nav .nav-link, 
+.navbar-nav .dropdown-toggle {
+    color: #ffffff; /* Couleur par défaut des liens */
+    font-size: 1rem;
+    margin-left: 1rem; /* Espacement entre les liens */
+}
+
+/* Couleur au survol pour tous les liens */
+.navbar-nav .nav-link:hover, 
+.navbar-nav .dropdown-toggle:hover {
+    color: #ffdd57; /* Couleur jaune au survol */
+    text-decoration: underline;
+}
+
+/* Style pour le menu déroulant */
+.dropdown-menu {
+    background-color: #333; /* Fond du menu déroulant */
+    border: none; /* Supprime la bordure */
+}
+
+.dropdown-item {
+    color: #ffdd57; /* Couleur des liens dans le menu déroulant */
+}
+
+.dropdown-item:hover {
+    color: #333; /* Couleur du texte au survol */
+    background-color: #ffdd57; /* Fond jaune au survol */
+}
+
+/* État actif et focus pour le lien de navigation */
+.navbar-nav .dropdown-toggle:focus,
+.navbar-nav .dropdown-toggle:active {
+    color: #ffdd57; /* Couleur jaune pour le lien "Accueil" lorsqu'il est actif */
+    background-color: transparent; /* Garde le fond transparent */
+    outline: none; /* Supprime le contour de focus si nécessaire */
+}
+
+/* Empêche "Accueil" de devenir noir lorsque le menu est ouvert */
+.navbar-nav .dropdown-toggle.show {
+    color: #ffdd57; /* Maintient la couleur jaune lorsque le menu est ouvert */
+}
+
+/* Styles globaux */
+html, body {
+    margin: 0; /* Enlève les marges par défaut */
+    padding: 0; /* Enlève les paddings par défaut */
+}
+
+.container {
+    padding: 0; /* Enlève les paddings */
+    margin: 0; /* Enlève les marges */
+}
+
+/* Styles pour l'image */
+.image-container {
+    width: 107.8%;            /* Conteneur prend toute la largeur */
+    overflow: hidden;       /* Coupe l'excédent de l'image */
+    margin: 0;              /* Pas de marges supplémentaires */
+    padding: 0;             /* Pas de paddings supplémentaires */
+}
+
+.full-width-image {
+    width: 100%;            /* L'image prend toute la largeur du conteneur */
+    height: auto;           /* Maintient le ratio d'aspect */
+    max-height: 450px;      /* Limite la hauteur de l'image */
+    object-fit: cover;      /* Couvre le conteneur sans déformation */
+    display: block;         /* Supprime l’espace en dessous */
+    margin: 0 auto;         /* Centre l'image dans son conteneur */
+}
