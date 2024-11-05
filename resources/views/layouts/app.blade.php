@@ -23,17 +23,17 @@
                                 Accueil
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/objectifs">Objectifs</a></li>
-                                <li><a class="dropdown-item" href="/nutrition">Nutrition</a></li>
-                                <li><a class="dropdown-item" href="/conseils">Conseils</a></li>
-                                <li><a class="dropdown-item" href="/boutique">Boutique</a></li>
+                                <li><a class="dropdown-item" href="{{ route('objectif.index') }}">Objectifs</a></li>
+                                <li><a class="dropdown-item" href="{{ url('/nutrition') }}">Nutrition</a></li> <!-- Remplacez par la route définie dans web.php si elle existe -->
+                                <li><a class="dropdown-item" href="{{ route('conseil.index') }}">Conseils</a></li>
+                                <li><a class="dropdown-item" href="{{ route('boutique.index') }}">Boutique</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="/about" class="nav-link">Se connecter</a>
+                            <a href="{{ url('/login') }}" class="nav-link">Se connecter</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/contact" class="nav-link">S'inscrire</a>
+                            <a href="{{ url('/register') }}" class="nav-link">S'inscrire</a>
                         </li>
                     </ul>
                 </div>

@@ -8,7 +8,7 @@ abstract class Controller
 }
 use Illuminate\Http\Request;
 
-class PageController extends Controller
+class NavbarController extends Controller
 {
     public function home()
     {
@@ -17,11 +17,11 @@ class PageController extends Controller
 
     public function about()
     {
-        return view('about');
+        return view('log in');
     }
 
     public function contact()
     {
-        return view('contact');
+        return view('register');
     }
 }
