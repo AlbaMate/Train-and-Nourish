@@ -17,14 +17,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav ms-auto">
-                        <!-- Menu déroulant sous "Accueil" -->
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Accueil
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="{{ route('objectif.index') }}">Objectifs</a></li>
-                                <li><a class="dropdown-item" href="{{ url('/nutrition') }}">Nutrition</a></li> <!-- Remplacez par la route définie dans web.php si elle existe -->
+                                <li><a class="nav-link" href="{{ route('objectif.index') }}">Objectif</a></li>
+                                <li><a class="dropdown-item" href="{{ url('/nutrition') }}">Nutrition</a></li>
                                 <li><a class="dropdown-item" href="{{ route('conseil.index') }}">Conseils</a></li>
                                 <li><a class="dropdown-item" href="{{ route('boutique.index') }}">Boutique</a></li>
                             </ul>
@@ -41,9 +40,15 @@
         </nav>
     </header>
 
-    <div class="container mt-4">
+    <!-- Main content wrapper -->
+    <main class="container mt-4">
         @yield('content')
-    </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; {{ date('Y') }} Train-and-Nourish - Tous droits réservés</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ asset('js/script.js') }}" defer></script>

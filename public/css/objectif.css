@@ -1,0 +1,13 @@
+/* objectif.css */
+.objectifs-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.objectif-item {
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}

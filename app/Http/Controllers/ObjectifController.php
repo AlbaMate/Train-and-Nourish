@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class objectifController extends Controller
+class ObjectifController extends Controller
 {
     public function index()
     {
-        // Liste des objectifs que tu veux afficher
+        // Liste des objectifs à afficher
         $objectifs = [
             'Minceur',
             'Prise de muscle',
