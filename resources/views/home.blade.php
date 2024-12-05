@@ -75,4 +75,18 @@
     </div>
 </div>
 
+<div class="recettes-images">
+    <div class="parallax-container">
+        <img class="parallax-img" src="{{ asset('assets/plats equilibre/salade-de-pates-au-poulet.jpg') }}" alt="recettes">
+        <img class="parallax-img" src="{{ asset('assets/plats equilibre/Wok-de-poulet-aux-cacahuetes.png') }}" alt="recettes">
+        <img class="parallax-img" src="{{ asset('assets/plats equilibre/recette-healthy-de-poulet-facile-et-rapide.jpg') }}" alt="recettes">
+        <img class="parallax-img" src="{{ asset('assets/plats equilibre/pates-au-pesto-davocat.jpg') }}" alt="recettes">
+        <img class="parallax-img" src="{{ asset('assets/plats equilibre/Plats au quinoa/salade-quinoa-mangue1-2.jpg') }}" alt="recettes">
+        <img class="parallax-img" src="{{ asset('assets/plats equilibre/Plats au quinoa/Salade-de-quinoa-et-de-pois-chiches-avec-legumes-colores.png') }}" alt="recettes">
+    </div>
+</div>
+
+<script src="{{ asset('js/parallax.js') }}"></script>
+
+
 @endsection
